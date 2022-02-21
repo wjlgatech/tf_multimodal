@@ -1,4 +1,4 @@
-# tf-multimodal
+# tf_multimodal
 
 ## Objectives
 
