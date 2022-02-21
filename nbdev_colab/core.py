@@ -10,7 +10,7 @@ from google.colab import drive
 def setup_drive():
   "Connect Google Drive to use GitHub"
   drive.mount('/content/drive', force_remount=True)
-  os._exit(00)
+  #os._exit(00)
 
 # Cell
 from pathlib import Path
@@ -48,6 +48,6 @@ def git_push(path:Path, message:str):
   commands.append(f'git commit -m "{message}"')
   commands.append('git push origin master')
   for cmd in commands:
-    process = subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    process = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE)
     output, err = process.communicate()
   os.chdir(start)
