@@ -1,10 +1,35 @@
-# tf_multimodal
+# tf_multimodal: Imbalanced Multi-class Classification for Multi-modal Data
 
-## Objectives
+`tf_multimodal` is a deep learning classifier for Imbalanced Multi-class & Multi-modal Data.
 
-To build a automated Tensorflow based multimodal classifier that consumes tabular data with cnt, cat, txt, img columns.
 
-## Notes
+## Why tf_multimodal
+
+`tf_multimodal` aims to be:
+
+- easy-to-use: no boiler-plate coding required, simple API to follow
+- easy-to-rebuild (custom): modules are lego-like, ready to be mixed and match
+- end-to-end: input raw data output predictions
+- stable and scalable for production
+
+## Essential features
+
+- imbalanced multiclass classification: `tf_multimodal` provides several options to handle imbalanced learning, including bias initiation, class weights, resampling, focal loss.
+
+- feature encoding: `tf_multimodal` automates the encoding for all selected features, making it a bleeze for large scale experimentations.
+
+- feature dtype: 
+`tf_multimodal` provides helpers to automatically separate features of different data-types and corresponding encoders for each type, including cnt(continuous feature), cat(categorical feature), txt(text feature), img (image feature), dt(datetime feature).
+
+- feature selection: `tf_multimodal` provides tools to select relevant features, at this release include L1, VSN
+
+- feature crossing: 
+`tf_multimodal` provides tools for feature crossing (i.e. feature interactions), at this release includes DeepCrossLayer, vsn_DeepCrossLayer
+
+
+`tf_multimodal` is under active development and welcomes your contribution. For recent updates, please visit https://github.com/wjlgatech/tf_multimodal
+
+## Dev Notes
 - this package is developed using [nbdev_colab](https://github.com/muellerzr/nbdev_colab) 
 - tf_multimodal is a synergetic project [auto-tfrs](https://github.com/wjlgatech/auto_tfrs), an easy-to-use, easy-to-make recommendation engineer based on [tfrs](https://www.tensorflow.org/recommenders)
 
@@ -13,8 +38,6 @@ To build a automated Tensorflow based multimodal classifier that consumes tabula
 - [/5] test performance on other datasets
 - [/5] modularize it and put in .py
 - [/5] packaging it into a library
-
-## Features
 
 **Features Built**
 - [5/5] preprocess and encode cnt_cols: normalization and bucketization
