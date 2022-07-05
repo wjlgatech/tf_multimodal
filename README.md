@@ -31,13 +31,7 @@
 
 ## Dev Notes
 - this package is developed using [nbdev_colab](https://github.com/muellerzr/nbdev_colab) 
-- tf_multimodal is a synergetic project [auto-tfrs](https://github.com/wjlgatech/auto_tfrs), an easy-to-use, easy-to-make recommendation engineer based on [tfrs](https://www.tensorflow.org/recommenders)
-
-## Milestones
-- [5/5] build a working [notebook](https://github.com/wjlgatech/tf-multimodal/blob/main/tf_multimodal.ipynb) with 1 sample dataset
-- [/5] test performance on other datasets
-- [/5] modularize it and put in .py
-- [/5] packaging it into a library
+- tf_multimodal is a synergetic project [fast_tfrs](https://github.com/wjlgatech/fast_tfrs), an easy-to-use, easy-to-make recommendation engineer based on [tfrs](https://www.tensorflow.org/recommenders)
 
 **Features Built**
 - [5/5] preprocess and encode cnt_cols: normalization and bucketization
